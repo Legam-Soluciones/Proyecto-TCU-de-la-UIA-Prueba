@@ -1,0 +1,28 @@
+<odoo>
+    <record id="view_form_tcu_student" model="ir.ui.view">
+        <field name="name">tcu.student.form</field>
+        <field name="model">tcu.student</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="email"/>
+                        <field name="carrera"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_tcu_student" model="ir.actions.act_window">
+        <field name="name">Estudiantes TCU</field>
+        <field name="res_model">tcu.student</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_tcu_student_root" name="TCU Student" />
+    <menuitem id="menu_tcu_student" name="Estudiantes" parent="menu_tcu_student_root"/>
+    <menuitem id="submenu_tcu_student" name="Gestión de Estudiantes" parent="menu_tcu_student"
+              action="action_tcu_student"/>
+</odoo>

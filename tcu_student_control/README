@@ -1,0 +1,12 @@
+# Sistema de Control de Estudiantes TCU - Módulo Odoo
+
+## Componentes:
+- Módulo: `tcu_student_control`
+- Base de Datos: `test_tcu_db`
+- Backend: Odoo 16
+- Conexión PostgreSQL
+
+## Pasos:
+1. Ejecutar `odoo-bin` con el archivo `odoo.conf`
+2. Crear la base de datos `test_tcu_db`
+3. Cargar e instalar el módulo desde Apps
